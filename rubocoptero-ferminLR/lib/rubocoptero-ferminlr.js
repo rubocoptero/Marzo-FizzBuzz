@@ -9,7 +9,7 @@
 'use strict';
 
 module.exports.getStringFor = function(number) {
-  if (number === 2) return '2';
+  if(number === 3){return 'Fizz'};
 
-  return '1';
+  return number.toString();
 };

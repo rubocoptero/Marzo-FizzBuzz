@@ -16,4 +16,9 @@ describe('FizzBuzz', function () {
   it('return Fizz for 3', function () {
     FizzBuzz.getStringFor(3).should.equal('Fizz');
   });
+
+  it('return Buzz for 5', function () {
+    FizzBuzz.getStringFor(5).should.equal('Buzz');
+  });
+
 });
