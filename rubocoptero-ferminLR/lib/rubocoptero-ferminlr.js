@@ -9,5 +9,5 @@
 'use strict';
 
 module.exports.getStringFor = function() {
-  return 'awesome';
+  return '1';
 };

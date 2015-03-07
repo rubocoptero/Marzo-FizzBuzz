@@ -9,4 +9,8 @@ describe('FizzBuzz', function () {
     FizzBuzz.getStringFor(1).should.equal('1');
   });
 
+  it('returns 2 for 2', function(){
+    FizzBuzz.getStringFor(2).should.equal('2');
+  })
+
 });
