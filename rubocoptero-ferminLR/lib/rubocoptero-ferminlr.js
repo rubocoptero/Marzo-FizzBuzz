@@ -10,15 +10,19 @@
 
 module.exports.getStringFor = function(number) {
 
-    if (isDisibleBy3(number)) {
+    if (isDivisibleBy3(number)) {
         return 'Fizz';
-    } else if (number === 5) {
+    } else if (isDivisibleBy5(number)) {
         return 'Buzz';
     }
 
     return number.toString();
 
-    function isDisibleBy3(number){
+    function isDivisibleBy5 (number) {
+      return number % 5 === 0;
+    }
+
+    function isDivisibleBy3(number){
         return number%3 === 0;
     }
 };
