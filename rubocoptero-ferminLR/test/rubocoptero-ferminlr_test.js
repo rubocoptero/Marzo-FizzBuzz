@@ -24,4 +24,11 @@ describe('FizzBuzz', function () {
   it('return Fizz for 6', function () {
     FizzBuzz.getStringFor(6).should.equal('Fizz');
   });
+
+  it('return Buzz for 10', function () {
+    FizzBuzz.getStringFor(10).should.equal('Buzz');
+  });
+
+
+
 });

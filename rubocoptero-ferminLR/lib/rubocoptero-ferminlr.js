@@ -9,11 +9,16 @@
 'use strict';
 
 module.exports.getStringFor = function(number) {
-  if(number === 3) {
-    return 'Fizz';
-  } else if (number === 5) {
-    return 'Buzz';
-  }
 
-  return number.toString();
+    if (isDisibleBy3(number)) {
+        return 'Fizz';
+    } else if (number === 5) {
+        return 'Buzz';
+    }
+
+    return number.toString();
+
+    function isDisibleBy3(number){
+        return number%3 === 0;
+    }
 };
